@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" , dir="rtl">
+    {% load static %}
+<head> 
+    <link rel="stylesheet" href="{% static '..//static//css//contactUs.css'%}">
+    <meta charset="UTF-8">
+    <title>ارتباط با ما</title>
+</head>
+<body>
+
+<div class="topnav">
+    <a href={% url 'home' %}> خانه </a>
+    <a class='active' href={% url 'contactus' %}> ارتباط با ما </a>
+    <a  href={% url 'aboutus' %}> درباره ما</a>
+    
+</div>
+
+
+<div class="headImgHome">
+    <p class="textPic">با ما در ارتباط باشید...</p>
+    <img src="{% static '..//static//media//Screenshot (128).png'%}">
+</div>
+
+<div >
+    <div class="txtHdr">
+        <p class="txt1">چگونه با ما در ارتباط باشید؟؟؟
+            <br>
+            برای در تماس بودن با ما<br> کافیه فیلدهای زیر را تکمیل کنید.</p>
+    </div>
+    <div class="form">
+        <form action="/action_page.php">
+            <label for="html">نام: </label><br>
+            <input class="inp"  id="html" name="fav_language" value=""><br>
+            <label for="css">نام خانوادگی: </label><br>
+            <input class="inp" id="css" name="fav_language" value=""><br>
+             <label for="javascript"> توضیحات: </label><br>
+            <textarea class="inpArea" id="javascript" name="fav_language" rows="4" cols="50"></textarea><br>
+
+            <input class="btnSave" type="submit" value="ثبت">
+        </form>
+
+    </div>
+</div>
+
+</body>
+</html>

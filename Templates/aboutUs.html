@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" , dir="rtl">
+    {% load static %}
+<head>
+    <link rel="stylesheet" href="{% static '..//static//css//aboutUs.css'%}">
+    <meta charset="UTF-8">
+    <title>درباره ما</title>
+</head>
+<body>
+
+<div class="nav">
+    <a href={% url 'home' %}> خانه </a>
+    <a href={% url 'contactus' %}> ارتباط با ما </a>
+    <a class='active' href={% url 'aboutus' %}> درباره ما </a>
+    
+</div>
+
+<div class="header">
+    <img class="imgHeader" src="{% static '..//static//media//Barista-101.jpg'%}" alt="Coffee">
+    <pre class="h1">ما گرد هم آمده ایم تا به مردم کمک کنیم<br> تا پرانرژی و با انگیزه بمانند</pre>
+    <pre class="h2">قهوهای تازه و سالم را از ما بخواهید </pre>
+</div>
+
+</body>
+</html>
